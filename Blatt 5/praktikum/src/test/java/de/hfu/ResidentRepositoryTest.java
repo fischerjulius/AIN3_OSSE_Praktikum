@@ -94,7 +94,7 @@ public class ResidentRepositoryTest {
                 assertEquals(r3,resident);
             }
             else {
-                assertEquals(null, resident);
+                assertEquals(null,resident);
             }
 
         }
@@ -123,7 +123,7 @@ public class ResidentRepositoryTest {
     public void getUniqueResidentTest2() throws ResidentServiceException {
         Resident test = new Resident();
         test.setStreet("Streetystreet");
-        test.setDateOfBirth(new Date(1000-11-11));
+        //test.setDateOfBirth(new Date(1000-11-11));
         repos.addResident(r1);
         repos.addResident(r2);
         repos.addResident(r3);
